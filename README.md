@@ -375,20 +375,7 @@ df['Churn'].value_counts()
 sns.countplot(df['Churn'])
 ```
 
-
-
-
-
-    <AxesSubplot:xlabel='Churn', ylabel='count'>
-
-
-
-
-    
 ![png](output_14_2.png)
-    
-
-
 
 ```python
 # Explore demographic features quickly
@@ -400,22 +387,8 @@ sns.countplot(df['Partner'], ax=ax[1,0])
 sns.countplot(df['Dependents'], ax=ax[1,1])
 ```
 
-
-
-
-
-
-    <AxesSubplot:xlabel='Dependents', ylabel='count'>
-
-
-
-
-    
 ![png](output_15_2.png)
     
-
-
-
 ```python
 # Explore services subscribed to quickly
 f, ax = plt.subplots(3,3, figsize=(20,15))
@@ -430,45 +403,17 @@ sns.countplot(df['TechSupport'], ax=ax[2,0])
 sns.countplot(df['StreamingTV'], ax=ax[2,1])
 sns.countplot(df['StreamingMovies'], ax=ax[2,2])
 ```
-
-
-
-
-
-
-    <AxesSubplot:xlabel='StreamingMovies', ylabel='count'>
-
-
-
-
     
 ![png](output_16_2.png)
     
-
-
-
 ```python
 # Explore accounts quickly
 df['Contract'].value_counts()
 sns.countplot(df['Contract'])
 ```
-
-
-
-
-
-
-    <AxesSubplot:xlabel='Contract', ylabel='count'>
-
-
-
-
     
 ![png](output_17_2.png)
     
-
-
-
 ```python
 # Explore accounts quickly
 f, ax = plt.subplots(1,3, figsize=(15,5))
@@ -478,45 +423,17 @@ sns.countplot(df['Contract'], ax=ax[0])
 sns.countplot(df['PaperlessBilling'], ax=ax[1])
 sns.countplot(df['PaymentMethod'], ax=ax[2])
 ```
-
-
-
-
-
-
-    <AxesSubplot:xlabel='PaymentMethod', ylabel='count'>
-
-
-
-
     
 ![png](output_18_2.png)
     
-
-
-
 ```python
 
 # Explore monthly payments against churns
 sns.boxplot('Churn', 'MonthlyCharges', data=df)
 ```
-
-
-
-
-
-
-    <AxesSubplot:xlabel='Churn', ylabel='MonthlyCharges'>
-
-
-
-
     
 ![png](output_19_2.png)
     
-
-
-
 ```python
 
 # Summarise
